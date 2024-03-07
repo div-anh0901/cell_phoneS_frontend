@@ -15,6 +15,7 @@ body{
 }
 
 *, :after, :before {
+  font-family: "Roboto", sans-serif;
   box-sizing: inherit;
   border: 0;padding: 0;
 }
