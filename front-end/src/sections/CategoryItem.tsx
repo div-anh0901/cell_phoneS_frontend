@@ -1,26 +1,47 @@
-import React from 'react'
-import { PhoneMenu } from '../data'
+import React, { useEffect, useState } from 'react'
+import { LaptopMenu, PhoneMenu,headPhone } from '../data'
 type Props ={
     IsShow: boolean;
     setIsShowShow: ()=> void;
     setIsShowHide:()=> void;
+    indexMenu: number;
 }
 
+function CaregoryItem({IsShow,setIsShowShow,setIsShowHide,indexMenu}:Props) {
 
-function CaregoryItem({IsShow,setIsShowShow,setIsShowHide}:Props) {
-    if(IsShow === false) return null;
+    const [dataMenu,setDataMenu] = useState(PhoneMenu)
+    
 
     function handleClose (e:any){
         if(e.target.id)  setIsShowHide();
     }
 
+    useEffect(()=>{
+        function fectData(){
+            if(indexMenu===1){
+                setDataMenu(PhoneMenu)
+            }else if(indexMenu === 2){
+                setDataMenu(LaptopMenu)
+            }else if(indexMenu === 3) {
+                setDataMenu(headPhone)
+            }else {
+                setDataMenu(PhoneMenu)
+            }
+            
+        }
+        fectData()
+
+    },[indexMenu,dataMenu])
+
+    if(IsShow === false) return null;
+
   return (
-    <div className='absolute w-[910px] top-1 left-[30%] bg-white z-9' onMouseEnter={setIsShowShow} onMouseLeave={setIsShowHide} id="wrapper" onClick={handleClose}>
+    <div className='absolute w-[910px] rounded-[10px] top-1 left-[24%] bg-white z-9' onMouseEnter={setIsShowShow} onMouseLeave={setIsShowHide} id="wrapper" onClick={handleClose}>
         <div className=' w-[100%] rounded-[10px] shadow-md' >
-            <div className='w-full flex'>
+            <div className='w-full'>
                 {
-                    PhoneMenu.map((data,index)=>(
-                        <div key={index} className='p-[10px]'>
+                    dataMenu.map((data,index)=>(
+                        <div key={index} className='p-[10px] float-left'>
                             <div className='font-bold p-[5px] text-[14px]' >{data.title}</div>  
                             {data.items.map((data_v1, index_v1)=>(
                                 <div key={index_v1} className='text-[#707070] text-[14px] p-[5px] hover:text-bg-banner cursor-pointer' >{data_v1.label}</div>

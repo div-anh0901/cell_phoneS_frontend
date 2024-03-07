@@ -14,20 +14,27 @@ import { PiSpeakerSimpleHighLight } from "react-icons/pi";
 import { SiSonarsource } from "react-icons/si";
 
 type Props ={
-    setIsShowHide ?: ()=>void,
-    setIsShowShow ?: ()=>void,
+    setIsShowHide : ()=>void,
+    setIsShowShow : ()=>void,
+    setIndexMenu : (data: number)=> void,
+  
 }
 
 
-function Category({setIsShowHide,setIsShowShow}:Props) {
+function Category({setIsShowHide,setIsShowShow,setIndexMenu}:Props) {
+
+    function handleHandleShow(data: number){
+        setIsShowShow()
+        setIndexMenu(data);
+    }
     
   return (
-    <div className='w-[225px] ml-[18%] rounded-[10px]shadow-md z-2' 
+    <div className='w-[220px] ml-[10%] rounded-[10px]shadow-md z-2' 
     >
         <div className='bg-white p-2 rounded text-[#343a40]'>
            <div 
            className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-           onMouseEnter={setIsShowShow}
+           onMouseEnter={()=>handleHandleShow(1)}
            onMouseLeave={setIsShowHide}
            >
                 <div className='flex h-[35px] items-center '>
@@ -38,7 +45,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(2)}
                 onMouseLeave={setIsShowHide}
            >
                 <div className='flex h-[35px] items-center'>
@@ -49,7 +56,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(3)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -60,7 +67,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -71,7 +78,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -82,7 +89,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -95,7 +102,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -106,7 +113,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -117,7 +124,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -128,7 +135,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -139,7 +146,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
@@ -150,7 +157,7 @@ function Category({setIsShowHide,setIsShowShow}:Props) {
            </div>
            <div 
                 className='text-[#343a40] font-bold flex h-[35px] cursor-pointer items-center justify-between'
-                onMouseEnter={setIsShowShow}
+                onMouseEnter={()=>handleHandleShow(4)}
                 onMouseLeave={setIsShowHide}
             >
                 <div className='flex h-[35px] items-center'>
