@@ -12,17 +12,22 @@ import { FaRegUserCircle } from "react-icons/fa";
 import PopupCaregoryComponent from './PopupCaregoryComponent';
 
 type Prop = {
-    setIsShowHide ?: ()=>void,
-    setIsShowShow ?: ()=>void,
+    setIsShowHide : ()=>void,
+    setIsShowShow : ()=>void,
+    setIndexMenu : (data: number)=> void,
+    indexMenu: number;
 }
-function Banner({setIsShowHide, setIsShowShow}:Prop) {
+function Banner({setIsShowHide, setIsShowShow,setIndexMenu,indexMenu}:Prop) {
 
     const [showCategory, setShowCategory] = useState(false)
 
   return (
-    <div className='banner-container bg-bg-banner text-white flex items-center justify-center '>
-        <div className='zero:max-md-800:hidden md-800:block w-[81%]'>
-            <div className='w-[100%] h-16 flex items-center justify-center'>
+    <div className='zero:max-md-800:h-[105px] banner-container bg-bg-banner h-16 text-white flex items-center justify-between '>
+        <div 
+            className='zero:max-md-800:hidden md-800:block sm:w-[100%] xl-1200:w-[1250px] m-auto'
+            
+            >
+            <div className='w-[100%] h-16 flex items-center justify-between '>
                 <LogoCoponent/>
                 <div className='zero:hidden md:block relative' onClick={()=> setShowCategory(!showCategory)}>
                     <div className='category flex h-[42px] items-center py-[3px] px-[5px] rounded-[10px] cursor-pointer mr-1'>
@@ -82,7 +87,7 @@ function Banner({setIsShowHide, setIsShowShow}:Prop) {
             </div>
         </div>
         
-        <div className='w-[90%] h-[105px] flex zero:max-md-800:block md-800:hidden'>
+        <div className='w-[100%] h-[105px] flex zero:max-md-800:block md-800:hidden'>
             <div className='flex h-[64px] items-center justify-between'>
                 <LogoCoponent/>
                 <CitisComponent/>
@@ -91,7 +96,10 @@ function Banner({setIsShowHide, setIsShowShow}:Prop) {
             
             <DeviceSearchComponent/>
         </div>
-        <PopupCaregoryComponent isShowCategory={showCategory} onClose={()=>setShowCategory(false)}/>
+        <PopupCaregoryComponent 
+            setIsShowHide={setIsShowHide}
+            setIsShowShow={setIsShowShow}
+        setIndexMenu={(data:number)=>setIndexMenu(data) } isShowCategory={showCategory} onClose={()=>setShowCategory(false)}/>
         
     </div>
   )

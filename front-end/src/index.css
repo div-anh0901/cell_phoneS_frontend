@@ -44,3 +44,14 @@ input {
 .login{
   word-wrap: break-word;
 }
+.option-slider{
+  overflow-x: scroll;
+}
+.option-slider::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+.option-slider::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}

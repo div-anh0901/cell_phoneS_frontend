@@ -27,16 +27,14 @@ function CaregoryItem({IsShow,setIsShowShow,setIsShowHide,indexMenu}:Props) {
             }else {
                 setDataMenu(PhoneMenu)
             }
-            
         }
         fectData()
 
     },[indexMenu,dataMenu])
-
     if(IsShow === false) return null;
 
   return (
-    <div className='absolute w-[910px] rounded-[10px] top-1 left-[24%] bg-white z-9' onMouseEnter={setIsShowShow} onMouseLeave={setIsShowHide} id="wrapper" onClick={handleClose}>
+    <div className='absolute w-[910px] rounded-[10px] top-1 sm:left-[23%] xl-1500:left-[29%] bg-white z-10' onMouseEnter={setIsShowShow} onMouseLeave={setIsShowHide} id="wrapper" onClick={handleClose}>
         <div className=' w-[100%] rounded-[10px] shadow-md' >
             <div className='w-full'>
                 {
