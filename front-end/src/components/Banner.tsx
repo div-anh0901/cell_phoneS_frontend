@@ -22,11 +22,8 @@ function Banner({setIsShowHide, setIsShowShow,setIndexMenu,indexMenu}:Prop) {
     const [showCategory, setShowCategory] = useState(false)
 
   return (
-    <div className='zero:max-md-800:h-[105px] banner-container bg-bg-banner h-16 text-white flex items-center justify-between '>
-        <div 
-            className='zero:max-md-800:hidden md-800:block sm:w-[100%] xl-1200:w-[1250px] m-auto'
-            
-            >
+    <div className='zero:max-md-800:h-[105px] banner-container bg-bg-banner h-16 text-white flex items-center justify-between relative'>
+        <div  className='zero:max-md-800:hidden md-800:block sm:w-[100%] xl-1200:w-[1250px] m-auto'>
             <div className='w-[100%] h-16 flex items-center justify-between '>
                 <LogoCoponent/>
                 <div className='zero:hidden md:block relative' onClick={()=> setShowCategory(!showCategory)}>

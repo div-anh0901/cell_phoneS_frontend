@@ -1,3 +1,5 @@
+import { brandImage } from "./images"
+
 export const PhoneMenu = [
     {
         title: "Thương hiệu điện thoại",
@@ -606,4 +608,184 @@ export const headPhone =[
             },
         ]
     }
+]
+
+export const PhoneMenuMobile = [
+    {
+        title: "Thương hiệu điện thoại",
+        items:[
+            {
+               label: "IPhone",
+               value: "iphone",
+               image: brandImage.apple
+            },
+            {
+                label:  "Samsung",
+                value:  "Samsung",
+                image: brandImage.samsung
+             },
+             {
+                label:  "Xiaomi",
+                value:  "Xiaomi",
+                image: brandImage.xiaomi
+             },
+             {
+                label:  "OPPO",
+                value:  "OPPO",
+                image: brandImage.oppo
+             },
+             {
+                label:  "Realme",
+                value:  "Realme",
+                image: brandImage.realme
+             },
+             {
+                label:  "Vivo",
+                value:  "Vivo",
+                image: brandImage.vivo
+             },
+             {
+                label:  "Nokia",
+                value:  "Nokia",
+                image: brandImage.nokia
+             },
+             {
+                label:  "ASUS",
+                value:  "ASUS",
+                image: brandImage.asus
+             },
+             {
+                label:  "Nubia,ZTE",
+                value:  "Nubia,ZTE",
+                image: brandImage.oneplus
+             },
+             {
+                label:  "TECNO",
+                value:  "TECNO",
+                image: brandImage.tecno
+             },
+             {
+                label:  "Infinix",
+                value:  "Infinix",
+                image: brandImage.Infinix
+             },
+             {
+                label:  "OnePlus",
+                value:  "OnePlus",
+                image: brandImage.Infinix
+             },
+             {
+                label:  "Itel",
+                value:  "Itel",
+                image: brandImage.Infinix
+             },
+             {
+                label:  "TCL",
+                value:  "TCL",
+                image: brandImage.tcl
+             },
+             {
+                label:  "Masstel",
+                value:  "Masstel",
+                image: brandImage.masstel
+             },
+             {
+                label:  "INOI",
+                value:  "INOI",
+                image:  "INOI",
+             },
+             
+        ]
+    },
+    {
+        title: "Mức giá điện thoại",
+        items:[
+            {
+                label: "Dưới 2 triệu",
+                value:"",
+                image:""
+            },
+            {
+              label:  "Từ 2 - 4 triệu",
+              value:"",
+              image:""
+            },
+            {
+                label:  "Từ 4 - 7 triệu",
+                value:"",
+                image:""
+              },
+            {
+                label:  "Từ 7 - 13 triệu",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Từ 13 - 20 triệu",
+                value:"",
+                image:""
+            },
+            {
+                label:  "trên 20 triệu",
+                value:"",
+                image:""
+            },
+        ]
+    },
+    {
+        title: "Điện thoại hot",
+        items:[
+            {
+                label: "IPhone 15 Pro Max",
+                value:"",
+                image:""
+            },
+            {
+              label:  "Samsung Glaxy",
+              value:"",
+              image:""
+            },
+            {
+                label:  "Xiaomi Redmi Node 13",
+                value:"",
+                image:""
+              },
+            {
+                label:  "OPPO Reno11 F 5G",
+                value:"",
+                image:""
+            },
+            {
+                label:  "TECNO SPARK 2024 Series",
+                value:"",
+                image:""
+            },
+            {
+                label:  "realme C51 2024 Series",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Infinix Note 30 5G",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Vivo V29e",
+                value:"",
+                image:""
+            },
+            {
+                label:  "TCL 40 NXT PAPER",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Redmi Note 13 Pro",
+                value:"",
+                image:""
+            },
+        ]
+    },
+    
 ]

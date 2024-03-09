@@ -17,7 +17,8 @@ body{
 *, :after, :before {
   font-family: "Roboto", sans-serif;
   box-sizing: inherit;
-  border: 0;padding: 0;
+  border: 0;
+  padding: 0;
 }
 .body{
   width: 100%;
@@ -54,4 +55,8 @@ input {
 
 .option-slider::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
+}
+
+.bodyFooter{
+  height: calc(100% - 64px);
 }
