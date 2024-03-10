@@ -88,7 +88,7 @@ const Navbar =[
 
 function BodyMenuFooter() {
   return (
-    <div className='fixed w-full bodyFooter bg-white text-black z-20 top-0'>
+    <div className='fixed w-full bodyFooter bg-white text-black z-20 top-[64px]'>
         <div className='w-full h-full flex'>
             <div className='w-[100px] h-full overflow-y-auto'>
                 {
@@ -102,32 +102,36 @@ function BodyMenuFooter() {
                     ))
                 }
             </div>
-            <div className='w-full h-full text-[#707070]  p-2 '>
+            <div className='w-full h-full text-[#707070] overflow-y-auto p-2 '>
                 <div className='w-full flex justify-between py-2'>
                     <div className='text-[16px] font-bold '>Điện thoại</div>  
                     <div className='text-[16px] '>Xem tất cả</div>  
                 </div>
                 {PhoneMenuMobile.map((data,index)=>(
-                    <div key={index} style={{clear:"both"}} className='py-2'>
+                    <div key={index} style={{clear:"both" }} className='py-2'>
                         <div className='text-[16px] font-bold' >{data.title}</div>
-                        {data.items.map((item, index1)=>(
-                             <div key={index1} >
-                               {
-                                item.image.length !==0 ? (<>
-                                        <div className=' float-left mx-[5px] my-[5px]   h-[30px] w-[70px] rounded-[10px] flex items-center justify-center border-solid border border-[#707070]'>
-                                            <img  className='h-[12px] w-[50px]' src={item.image} alt="" />
-                                        </div>
-                                        
-                                    </>): (
-                                        <>
-                                            <div>
-                                                {item.label}
-                                            </div>
-                                        </>
-                                    )
-                               }
-                             </div>
-                        ))}
+                        <div className='w-full'>
+                            <div className='flex w-100percenadd200px overflow-x-auto flex-wrap'>
+                                {data.items.map((item, index1)=>(
+                                    <div key={index1} >
+                                    {
+                                        item?.image.length !==0 ? (<>
+                                                <div className=' mx-[5px] cursor-pointer my-[5px] h-[30px] w-[70px] rounded-[10px] flex items-center justify-center border-solid border border-[#707070]'>
+                                                    <img  className='h-[12px] w-[50px]' src={item.image} alt="" />
+                                                </div>
+                                            </>): (
+                                                <>
+                                                    <div className=' hover:bg-bg-baner-item cursor-pointer  p-[5px] mx-[5px] my-[5px] rounded-[10px] flex items-center justify-center border-solid border border-[#707070]'>
+                                                        {item.label}
+                                                    </div>
+                                                </>
+                                            )
+                                    }
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                       
                     </div>
                 ))}
             </div>
@@ -136,5 +140,6 @@ function BodyMenuFooter() {
     </div>
   )
 }
+
 
 export default BodyMenuFooter

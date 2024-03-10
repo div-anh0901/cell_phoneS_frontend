@@ -48,15 +48,23 @@ input {
 .option-slider{
   overflow-x: scroll;
 }
-.option-slider::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
+
+*::-webkit-scrollbar{
+  width: 1px;
+}
+.w-100percenadd200px{
+  width: calc(100% +300px) !important;
 }
 
-.option-slider::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+.navbar-menu-mobile::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.navbar-menu-mobile::-webkit-scrollbar{
+  width: 1px;
 }
 
 .bodyFooter{
-  height: calc(100% - 64px);
+  height: calc(100% - 128px);
 }
+

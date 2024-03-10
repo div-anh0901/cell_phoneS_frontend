@@ -610,7 +610,19 @@ export const headPhone =[
     }
 ]
 
-export const PhoneMenuMobile = [
+export type TypeMenuMobile={
+    title: String;
+    items: Array<TypeMenuMobileItems>;
+}
+
+export type TypeMenuMobileItems={
+    label: String;
+    value: String;
+    image : any;
+}
+
+
+export const PhoneMenuMobile:TypeMenuMobile[] = [
     {
         title: "Thương hiệu điện thoại",
         items:[
