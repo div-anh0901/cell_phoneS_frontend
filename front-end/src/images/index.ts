@@ -51,6 +51,19 @@ import gaming from './menu-mobile/computers/icon_lapgaming.webp'
 import sangtao from './menu-mobile/computers/sang_tao.webp'
 import singvien from './menu-mobile/computers/sinhvien.webp'
 import office from './menu-mobile/computers/van_phong.webp'
+
+// productsale
+import ban_chai_dien from './product-sale/ban-chai-dien-oral-b-vitality-ultrathin-d12-513-1.webp';
+import ban_ui_hoi_nuoc from './product-sale/ban-ui-hoi-nuoc-philips-dst3030-70-1.webp';
+import may_chieu_mini from './product-sale/may-chieu-mini-wanbo-t4-full-hd_1.webp';
+import may_lam_sua_hat from './product-sale/may-lam-sua-hat-deerma-nu500w-1.webp';
+import may_loc_khong_khi from './product-sale/may-loc-khong-khi-levoit-vital-100s-1_1_1.webp';
+import may_say_giay from './product-sale/may-say-giay-deerma-hx10w.webp';
+import may_say_sinh_to from './product-sale/may-xay-sinh-to-cam-tay-philips-hr2531.webp';
+import sung_message from './product-sale/sung-massage-cam-tay-philips-fascial-gun-ppm7323-1.webp';
+import host_sale from './hot-sale-gia-soc.webp';
+
+
 export const brandImage={
     acer,
     asus,
@@ -107,4 +120,17 @@ export const computerImage={
     gaming,
     singvien,
     office
+}
+
+export const ProductSale ={
+    ban_chai_dien,
+    ban_ui_hoi_nuoc,
+    may_chieu_mini,
+    may_lam_sua_hat,
+    may_loc_khong_khi,
+    may_say_giay,
+    may_say_sinh_to,
+    sung_message,
+    host_sale
+
 }

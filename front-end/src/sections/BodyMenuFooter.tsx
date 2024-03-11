@@ -94,8 +94,6 @@ function BodyMenuFooter({IsShowMenuMobile}:Props) {
     const [isIndex, setIsIndex] = useState(0);
     const [dataNav, setDataNav] = useState(PhoneMenuMobile);
     
-
-    
     useEffect(()=>{
         function fectData(){
             if(isIndex === 0){
@@ -111,7 +109,7 @@ function BodyMenuFooter({IsShowMenuMobile}:Props) {
             }
         }
         fectData()
-    },[isIndex,dataNav])
+    },[isIndex, dataNav])
 
     if(!IsShowMenuMobile){
         return null;

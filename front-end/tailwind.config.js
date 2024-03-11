@@ -14,7 +14,9 @@ module.exports = {
         "bg-camera" : 'rgb(224, 242, 254)',
         "bg-accessory" : 'rgb(224, 242, 254)',
         "bg-tivi" : 'rgb(237, 233, 254)',
-        "bg-newpaper": 'rgb(204, 251, 241)'
+        "bg-newpaper": 'rgb(204, 251, 241)',
+        "bg-pink": "rgb(224, 0, 51)"
+
       },
       screens:{
         "zero": "0px",
