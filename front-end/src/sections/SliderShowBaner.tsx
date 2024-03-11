@@ -69,23 +69,26 @@ function SliderShowBaner() {
     <div className='hidden group-hover:block absolute top-[40%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
       <BsChevronCompactRight onClick={nextSlide} size={30} />
     </div>
-    <div className='option-slider flex w-full top-4 h-[20%]  justify-center py-2'>
-      {slides.map((slide, slideIndex) => (
-        <div
-          key={slideIndex}
-          onClick={() => goToSlide(slideIndex)}
-          className={
-            slideIndex !==currentIndex ? 
-            'cursor-pointer w-[20%]  h-[80%] flex items-center text-center text-[#343a40]' : 
-            "cursor-pointer w-[20%] h-[80%] flex items-center  text-[#343a40] border-solid border-b-2 border-bg-banner font-bold"
-        }
-        >
-        <div className='text-center min-w-[150px] h-[80%]'>
-            <div className='text-[14px]'>{slide.title}</div>
-            <div className='text-[12px]'>{slide.label}</div>
-        </div>
-        </div>
-      ))}
+    <div className=' flex w-full top-4 h-[20%]  overflow-y-auto'>
+      <div className='option-slider flex w-full min-w-[690px]  h-full  justify-center py-2'>
+        {slides.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+            className={
+              slideIndex !==currentIndex ? 
+              'cursor-pointer w-[20%] h-[80%] flex items-center text-center text-[#343a40]' : 
+              "cursor-pointer w-[20%] h-[80%] flex items-center  text-[#343a40] border-solid border-b-2 border-bg-banner font-bold"
+          }    
+          >
+          <div className='text-center w-[150px] h-[80%] min-h-[45px]'>
+              <div className='text-[14px]'>{slide.title}</div>
+              <div className='text-[12px]'>{slide.label}</div>
+          </div>
+          </div>
+        ))}
+      </div>
+      
     </div>
   </div>
   )

@@ -44,6 +44,13 @@ import vivo from './menu-mobile/brands/vivo.webp'
 import xiaomi from './menu-mobile/brands/xiaomi.webp'
 import asus from './menu-mobile/brands/asus.webp'
 
+//computer
+import camung from './menu-mobile/computers/camung.webp'
+import dowload from './menu-mobile/computers/download.png'
+import gaming from './menu-mobile/computers/icon_lapgaming.webp'
+import sangtao from './menu-mobile/computers/sang_tao.webp'
+import singvien from './menu-mobile/computers/sinhvien.webp'
+import office from './menu-mobile/computers/van_phong.webp'
 export const brandImage={
     acer,
     asus,
@@ -91,4 +98,13 @@ export const ImageCustomMenuMobile = {
     promotion,
     newpaper,
     tablet
+}
+
+export const computerImage={
+    camung,
+    dowload,
+    sangtao,
+    gaming,
+    singvien,
+    office
 }

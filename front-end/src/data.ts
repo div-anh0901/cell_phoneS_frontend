@@ -1,4 +1,4 @@
-import { brandImage } from "./images"
+import { brandImage, computerImage } from "./images"
 
 export const PhoneMenu = [
     {
@@ -619,6 +619,7 @@ export type TypeMenuMobileItems={
     label: String;
     value: String;
     image : any;
+    isBrand ?: boolean;
 }
 
 
@@ -800,4 +801,272 @@ export const PhoneMenuMobile:TypeMenuMobile[] = [
         ]
     },
     
+]
+export const TabletMenuMobile:TypeMenuMobile[] = [
+    {
+        title: "Thương hiệu Tablet",
+        items:[
+            {
+               label: "IPhone",
+               value: "iphone",
+               image: brandImage.apple
+            },
+            {
+                label:  "Samsung",
+                value:  "Samsung",
+                image: brandImage.samsung
+             },
+             {
+                label:  "Xiaomi",
+                value:  "Xiaomi",
+                image: brandImage.xiaomi
+             },
+             {
+                label:  "OPPO",
+                value:  "OPPO",
+                image: brandImage.oppo
+             },
+             {
+                label:  "Realme",
+                value:  "Realme",
+                image: brandImage.realme
+             },
+             {
+                label:  "Nokia",
+                value:  "Nokia",
+                image: brandImage.nokia
+             },
+        ]
+    },
+    {
+        title: "Tablet hot",
+        items:[
+            {
+                label: "IPad Air 5",
+                value:"",
+                image:""
+            },
+            {
+              label:  "IPad Pro 12.9 inch 2022",
+              value:"",
+              image:""
+            },
+            {
+                label:  "Galaxy Tab S9",
+                value:"",
+                image:""
+              },
+            {
+                label:  "OPPO Pad Air",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Tab S9 Plus",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Xiaomi Pad SE",
+                value:"",
+                image:""
+            },
+            {
+                label:  "TCL Tab 10L WIFI",
+                value:"",
+                image:""
+            },
+            {
+                label:  "TCL Tab 11 WIFI 128GB",
+                value:"",
+                image:""
+            },
+        ]
+    },
+    
+]
+
+export const LaptopMenuMobile:TypeMenuMobile[] = [
+    {
+        title: "Thương hiệu Tablet",
+        items:[
+            {
+               label: "IPhone",
+               value: "iphone",
+               image: brandImage.download
+            },
+            {
+                label:  "asus",
+                value:  "asus",
+                image: brandImage.asus
+             },
+             {
+                label:  "Lenovo",
+                value:  "lenovo",
+                image: brandImage.lenovo
+             },
+             {
+                label:  "Dell",
+                value:  "Dell",
+                image: brandImage.dell
+             },
+             {
+                label:  "hp",
+                value:  "hp",
+                image: brandImage.hp
+             },
+             {
+                label:  "acer",
+                value:  "acer",
+                image: brandImage.acer
+             },
+             {
+                label:  "LG",
+                value:  "LG",
+                image: brandImage.LG
+             },
+             {
+                label:  "gigabyte",
+                value:  "gigabyte",
+                image: brandImage.gigabyte
+             },
+             {
+                label:  "intel",
+                value:  "intel",
+                image: brandImage.Infinix
+             },
+             {
+                label:  "microsoft",
+                value:  "microsoft",
+                image: brandImage.surface
+             },
+             
+        ]
+    },
+    {
+        title: "Tầm giá",
+        items:[
+            {
+                label: "Dưới 10 triệu",
+                value:"",
+                image:""
+            },
+            {
+              label:  "Từ 10 - 15 triệu",
+              value:"",
+              image:""
+            },
+            {
+                label:  "Từ 15 - 20 triệu",
+                value:"",
+                image:""
+              },
+            {
+                label:  "Từ 20 - 25 triệu",
+                value:"",
+                image:""
+            },
+            {
+                label:  "Từ 25 - 30 triệu",
+                value:"",
+                image:""
+            },
+        ]
+    },
+    {
+        title: "Chọn theo nhu cầu",
+        items:[
+            {
+                label: "Văn phòng",
+                value:"",
+                image: computerImage.office,
+                isBrand: false,
+            },
+            {
+              label:  "Gaming",
+              value:"",
+              image: computerImage.gaming,
+              isBrand: false,
+            },
+            {
+                label:  "Mỏng nhẹ",
+                value:"",
+                image: computerImage.dowload,
+                isBrand: false,
+              },
+            {
+                label:  "Đồ họa-Kỹ thuật ",
+                value:"",
+                image:computerImage.sangtao,
+                isBrand: false,
+            },
+            {
+                label:  "Sinh viên",
+                value:"",
+                image: computerImage.singvien,
+                isBrand: false,
+            },
+            {
+                label:  "Cảm ứng",
+                value:"",
+                image: computerImage.camung,
+                isBrand: false,
+            },
+        ]
+    },
+    {
+        title: "Chọn theo dòng chip",
+        items:[
+            {
+                label:  "Lap Top i5",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Lap Top i3",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Lap Top i7",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Lap Top i9",
+                value:  "",
+                image: ""
+             },
+        ]
+    },
+    {
+        title: "Chọn theo kích thước màn hình",
+        items:[
+            {
+                label:  "Laptop 12 inch",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Laptop 13 inch",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Laptop 14 inch",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Laptop 15.6 inch",
+                value:  "",
+                image: ""
+             },
+             {
+                label:  "Laptop 16 inch",
+                value:  "",
+                image: ""
+             },
+        ]
+    }
 ]

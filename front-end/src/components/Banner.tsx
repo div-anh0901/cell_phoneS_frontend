@@ -22,7 +22,7 @@ function Banner({setIsShowHide, setIsShowShow,setIndexMenu,indexMenu}:Prop) {
     const [showCategory, setShowCategory] = useState(false)
 
   return (
-    <div className='zero:max-md-800:h-[105px] banner-container bg-bg-banner h-16 text-white flex items-center justify-between relative'>
+    <div className='banner-container bg-bg-banner h-16 text-white flex items-center justify-between relative'>
         <div  className='zero:max-md-800:hidden md-800:block zero:w-[100%] xl-1200:w-[1250px] m-auto'>
             <div className='w-[100%] h-16 flex items-center justify-between '>
                 <LogoCoponent/>
@@ -84,7 +84,7 @@ function Banner({setIsShowHide, setIsShowShow,setIndexMenu,indexMenu}:Prop) {
             </div>
         </div>
         
-        <div className='w-[100%] h-[105px] flex zero:max-md-800:block md-800:hidden'>
+        <div className='w-[100%] h-[64px] flex zero:max-md-800:block md-800:hidden'>
             <div className='flex h-[64px] items-center justify-between'>
                 <LogoCoponent/>
                 <DeviceSearchComponent/>

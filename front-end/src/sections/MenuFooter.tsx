@@ -33,18 +33,25 @@ const menu = [
         text: "Xem thêm"
     },
 ]
-
-function MenuFooter() {
+type Props={
+    onclose: ()=>void;
+    ontoggle:()=> void;
+}
+function MenuFooter({onclose,ontoggle}:Props) {
     const [indexMenu , setIndexMenu] = useState(0);
-
     function clickMoveMenu (index: number){
         setIndexMenu(index)
+        if(index===1){
+            ontoggle()
+        }else {
+            onclose()
+        }
     }
 
 
 
   return (
-    <div className='w-full fixed bottom-0 h-[64px] text-[#707070] shadow-menu z-20'>
+    <div className='w-full md-800:hidden fixed bottom-0 h-[64px] text-[#707070] shadow-menu z-20'>
         <div className='flex w-full h-[64px] items-center shadow-menu '>
             {menu.map((data,index)=>(
             <div 

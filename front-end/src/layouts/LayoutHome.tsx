@@ -10,6 +10,7 @@ import BodyMenuFooter from '../sections/BodyMenuFooter';
 function LayoutHome() {
     const [IsShow, setIsShow] = useState(false);
     const [indexMenu,setIndexMenu] = useState<number>(0);
+    const [IsShowMenuMobile, SetIsShowMenuMobile] = useState(false);
   return (
     <div className='w-full h-full'>
         <Banner 
@@ -19,7 +20,7 @@ function LayoutHome() {
           indexMenu={indexMenu}
           />
         <div className='w-full relative h-[376px] flex items-center justify-center my-[10px]'>
-            <div className='sm:w-[100%] xl-1200:w-[1250px] h-[376px] flex items-center justify-between'>
+            <div className='zero:w-[100%] xl-1200:w-[1250px] h-[376px] flex items-center justify-between'>
               <div className='zero:max-md-860:hidden w-[220px]'>
                 <Category
                   setIsShowHide={()=>setIsShow(false)} 
@@ -40,8 +41,8 @@ function LayoutHome() {
             </div>
         </div>
 
-        <MenuFooter />
-        <BodyMenuFooter/>
+        <MenuFooter onclose={()=>SetIsShowMenuMobile(false)} ontoggle={()=>SetIsShowMenuMobile(!IsShowMenuMobile)} />
+        <BodyMenuFooter IsShowMenuMobile={IsShowMenuMobile}/>
         
     </div>
   )
