@@ -31,6 +31,10 @@ module.exports = {
       boxShadow:{
         'menu': '0 1px 2px 0 rgba(60,64,67,.1)'
       },
+      borderRadius: {
+        "dot-left" : "0 100px 100px 0",
+        "dot-right" : "100px 0px 0px 100px"
+      }
       
       
     },

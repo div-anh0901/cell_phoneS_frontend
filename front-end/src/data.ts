@@ -1,4 +1,4 @@
-import { brandImage, computerImage } from "./images"
+import { ProductSale, brandImage, computerImage } from "./images"
 
 export const PhoneMenu = [
     {
@@ -1069,4 +1069,78 @@ export const LaptopMenuMobile:TypeMenuMobile[] = [
              },
         ]
     }
+]
+
+
+export const filterHotSmartphone = [
+    {
+
+    }
+]
+
+export const CostHostSale = [
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.ban_chai_dien,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.ban_chai_dien,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.may_chieu_mini,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.may_lam_sua_hat,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.may_loc_khong_khi,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.may_say_giay,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.may_say_sinh_to,
+        percentSale: "16%",
+        instalment: "0"
+    },
+    {
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        costTrue: "3.390.000",
+        costSale: "2.720.000",
+        image: ProductSale.sung_message,
+        percentSale: "16%",
+        instalment: "0"
+    },
 ]
