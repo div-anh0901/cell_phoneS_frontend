@@ -1080,12 +1080,13 @@ export const filterHotSmartphone = [
 
 export const CostHostSale = [
     {
-        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
+        title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S 123",
         costTrue: "3.390.000",
         costSale: "2.720.000",
-        image: ProductSale.ban_chai_dien,
+        image: ProductSale.may_chieu_mini,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index:1
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1101,7 +1102,8 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.may_chieu_mini,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index:2
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1109,7 +1111,8 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.may_lam_sua_hat,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index:3
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1117,7 +1120,8 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.may_loc_khong_khi,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index: 4
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1125,7 +1129,8 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.may_say_giay,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index: 5
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1133,7 +1138,8 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.may_say_sinh_to,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index:6
     },
     {
         title: "Máy lọc không khí chống dị ứng thú cưng Levoit Vital 100S",
@@ -1141,6 +1147,7 @@ export const CostHostSale = [
         costSale: "2.720.000",
         image: ProductSale.sung_message,
         percentSale: "16%",
-        instalment: "0"
+        instalment: "0",
+        index:7
     },
 ]

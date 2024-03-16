@@ -63,6 +63,9 @@ import may_say_sinh_to from './product-sale/may-xay-sinh-to-cam-tay-philips-hr25
 import sung_message from './product-sale/sung-massage-cam-tay-philips-fascial-gun-ppm7323-1.webp';
 import host_sale from './hot-sale-gia-soc.webp';
 
+//
+import bg_discount_product from './bg-discount-product.png'
+
 
 export const brandImage={
     acer,
@@ -134,3 +137,5 @@ export const ProductSale ={
     host_sale
 
 }
+
+export const BG_DISCOUNT_ITEMS={bg_discount_product}

@@ -18,6 +18,9 @@ module.exports = {
         "bg-pink": "rgb(224, 0, 51)"
 
       },
+      backgroundImage: {
+        'bg-discount': "url('/src/images/bg-discount-product.png')",
+      },
       screens:{
         "zero": "0px",
         "md-800": "800px",
@@ -34,6 +37,9 @@ module.exports = {
       borderRadius: {
         "dot-left" : "0 100px 100px 0",
         "dot-right" : "100px 0px 0px 100px"
+      },
+      margin:{
+        "dicount": "0 0 10px 10px"
       }
       
       
