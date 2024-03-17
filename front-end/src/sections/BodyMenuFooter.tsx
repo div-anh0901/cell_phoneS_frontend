@@ -141,7 +141,7 @@ function BodyMenuFooter({IsShowMenuMobile}:Props) {
                             <div className='flex w-100percenadd200px overflow-x-auto flex-wrap'>
                                 {data.items.map((item, index1)=>(
                                     <div key={index1} >
-                                   <NavbarItem isBrand={item?.isBrand} label={item.label} image={item.image}/>
+                                        <NavbarItem isBrand={item?.isBrand} label={item.label} image={item.image}/>
                                     </div>
                                 ))}
                             </div>

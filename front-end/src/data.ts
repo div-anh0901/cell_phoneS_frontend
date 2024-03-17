@@ -1072,9 +1072,50 @@ export const LaptopMenuMobile:TypeMenuMobile[] = [
 ]
 
 
-export const filterHotSmartphone = [
+export const filterHotSmartPhone = [
     {
-
+        value: "Apple",
+        label: "Apple"
+    },
+    {
+        value: "Samsung",
+        label: "samsung",
+    },
+    {
+        value: "Xiaomi",
+        label: "xiaomi"
+    },
+    {
+        value:"OPPO",
+        label: "oppo"
+    },
+    {
+        value: "vivo",
+        label: "Vivo"
+    },
+    {
+        value:"realme",
+        label: "realme"
+    },
+    {
+        value: "ASUS",
+        label: "ASUS",
+    },
+    {
+        value: "TECHNO",
+        label: "TECHNO",
+    },
+    {
+        value:"Nokia",
+        label: "Nokia"
+    },
+    {
+        value: "Infinix",
+        label: "Infinix"
+    },
+    {
+        value: "Oneplus",
+        label: "oneplus"
     }
 ]
 
@@ -1149,5 +1190,25 @@ export const CostHostSale = [
         percentSale: "16%",
         instalment: "0",
         index:7
+    },
+]
+type ListHotSmartPhoneType = {
+    image : any;
+    title: String;
+    costSale: String;
+    percentSale: String;
+    instalment: String;
+    costTrue: String;
+    index: number;
+}
+export const ListHotSmartPhone:ListHotSmartPhoneType[] = [
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProductSale.may_chieu_mini,
+        percentSale: "16%",
+        instalment: "0",
+        index:1
     },
 ]
