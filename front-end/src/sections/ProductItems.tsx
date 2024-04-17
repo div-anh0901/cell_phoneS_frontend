@@ -9,8 +9,6 @@ type Props ={
     instalment: String;
     costTrue: String;
 }
-
-
 function ProductItems(data: Props) {
   return (
     <div className='w-[200px] mb-[20px]'>

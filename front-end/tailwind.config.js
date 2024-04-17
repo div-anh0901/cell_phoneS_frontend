@@ -32,7 +32,10 @@ module.exports = {
         "xl-1700": "1700px",
       },
       boxShadow:{
-        'menu': '0 1px 2px 0 rgba(60,64,67,.1)'
+        'menu': '0 1px 2px 0 rgba(60,64,67,.1)',
+        'slide-item_v1': '0 1px 2px 0 rgba(60,64,67,.1)',
+        'slide-item_v2': '0 2px 6px 2px rgba(60,64,67,.15)',
+
       },
       borderRadius: {
         "dot-left" : "0 100px 100px 0",

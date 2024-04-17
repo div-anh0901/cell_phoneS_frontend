@@ -1,4 +1,4 @@
-import { ProductSale, brandImage, computerImage } from "./images"
+import { LaptopHotShow, MayTinhBangHotShow, ProducetHotShow, ProductSale, brandImage, computerImage } from "./images"
 
 export const PhoneMenu = [
     {
@@ -1192,7 +1192,7 @@ export const CostHostSale = [
         index:7
     },
 ]
-type ListHotSmartPhoneType = {
+type Product = {
     image : any;
     title: String;
     costSale: String;
@@ -1200,15 +1200,379 @@ type ListHotSmartPhoneType = {
     instalment: String;
     costTrue: String;
     index: number;
+    moreDiscount: String;
 }
-export const ListHotSmartPhone:ListHotSmartPhoneType[] = [
+export const ListHotSmartPhone:Product[] = [
     {
         title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
         costTrue: "34.990.000",
         costSale: "30.890.000",
-        image: ProductSale.may_chieu_mini,
-        percentSale: "16%",
+        image: ProducetHotShow.gtt_766,
+        percentSale: "12%",
         instalment: "0",
-        index:1
+        index:1,
+        moreDiscount : "309.000"
     },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone14_1,
+        percentSale: "12%",
+        instalment: "0",
+        index:2,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone14_pro24,
+        percentSale: "12%",
+        instalment: "0",
+        index:3,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone14_pro25,
+        percentSale: "12%",
+        instalment: "0",
+        index:4,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone15_plus1,
+        percentSale: "12%",
+        instalment: "0",
+        index:5,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone15_plus1_1,
+        percentSale: "12%",
+        instalment: "0",
+        index:6,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone15promax3,
+        percentSale: "12%",
+        instalment: "0",
+        index:7,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone15promax4,
+        percentSale: "12%",
+        instalment: "0",
+        index:8,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.iphone_13_2,
+        percentSale: "12%",
+        instalment: "0",
+        index:9,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.oppo_reno_11,
+        percentSale: "12%",
+        instalment: "0",
+        index:10,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.samsung_galaxy_s22_ultra,
+        percentSale: "12%",
+        instalment: "0",
+        index:10,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: ProducetHotShow.samsung_galaxy_s23_ultra,
+        percentSale: "12%",
+        instalment: "0",
+        index:10,
+        moreDiscount : "309.000"
+    },
+]
+
+export const filterHotLaptopShow=[
+    {
+        value:"Macbook",
+        label:"Macbook",
+    },
+    {
+        value:"Asus",
+        label:"Asus",
+    },
+    {
+        value:"MSI",
+        label:"MSI",
+    },
+    {
+        value:"Lenovo",
+        label:"Lenovo",
+    },
+    {
+        value:"HP",
+        label:"HP",
+    },
+    {
+        value:"Acer",
+        label:"Acer",
+    },
+    {
+        value:"Dell",
+        label:"Dell",
+    },
+    {
+        value:"Huawei",
+        label:"Huawei",
+    },
+    {
+        value:"Gigbyte",
+        label:"Gigbyte",
+    },
+    {
+        value:"Surface",
+        label:"Surface",
+    },
+]
+
+export const ListLaptopHotShow:Product[] = [
+    {
+        title: "Macbook Pro 14 M3 Pro 18GB - 512GB | Chính hãng Apple Việt Nam",
+        costTrue: "49.590.000",
+        costSale: "49.590.000",
+        image: LaptopHotShow.gpu,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "Laptop ASUS VivoBook S 14 FLIP TP3402VA-LZ025W",
+        costTrue: "11.490.000",
+        costSale: "16.990.000",
+        image: LaptopHotShow.laptop_asus_vivobook,
+        percentSale: "32%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "115.00"
+    },
+    {
+        title: "Laptop Lenovo LOQ 15IAX9 83GS001RVN",
+        costTrue: "20.190.000",
+        costSale: "22.490.000",
+        image: LaptopHotShow.laptop_lenovo,
+        percentSale: "10%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "202.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: LaptopHotShow.macbook_2,
+        percentSale: "12%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: LaptopHotShow.text_d_i_1__1_3,
+        percentSale: "12%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: LaptopHotShow.text_ng_n_13__5_14,
+        percentSale: "12%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "309.000"
+    },
+    {
+        title: "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+        costTrue: "34.990.000",
+        costSale: "30.890.000",
+        image: LaptopHotShow.text_ng_n_8__1_91,
+        percentSale: "12%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "309.000"
+    },
+]
+
+export const filterIpad=[
+    {
+        value:'Ipad 10.2 2021',
+        label:'Ipad 10.2 2021'
+    },
+    {
+        value:'Tab 59',
+        label:'Tab 59',
+
+    },
+    {
+        value:'Ipad Pro',
+        label:'Ipad Pro'
+    },
+    {
+        value: 'Samsung',
+        label:'Samsung',
+    },
+    {
+        value:'TLC',
+        label:'TLC'
+    },
+    {
+        value:'Lenovo',
+        label:'Lenovo'
+    },
+    {
+        value:'Xiaomi',
+        label:'Xiaomi'
+    }
+]
+
+export const ListMayTinhBangHotShow:Product[]=[
+    {
+        title: "iPad 10.2 2021 WiFi 64GB | Chính hãng Apple Việt Nam",
+        costTrue: "7.090.000",
+        costSale: "8.990.000",
+        image: MayTinhBangHotShow.maytinhbangv1,
+        percentSale: "21%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "71.000"
+    },
+    {
+        title: "iPad Gen 10 10.9 inch 2022 Wifi 64GB I Chính hãng Apple Việt Nam",
+        costTrue: "7.090.000",
+        costSale: "8.990.000",
+        image: MayTinhBangHotShow.maytinhbangv2,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "iPad Air 5 10.9 inch (2022) WIFI 64GB I Chính hãng Apple Việt Nam",
+        costTrue: "14.59.000",
+        costSale: "16.990.000",
+        image: MayTinhBangHotShow.maytinhbangv3,
+        percentSale: "14%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "146.000"
+    },
+    {
+        title: "iPad mini 6 WiFi 64GB | Chính hãng Apple Việt Nam",
+        costTrue: "11.990.000",
+        costSale: "12.990.000",
+        image: MayTinhBangHotShow.maytinhbangv4,
+        percentSale: "8%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "120.000"
+    },
+    {
+        title: "iPad Pro 11 inch 2022 M2 Wifi 128GB I Chính hãng Apple Việt Nam ",
+        costTrue: "20.690.000",
+        costSale: "23.990.000",
+        image: MayTinhBangHotShow.maytinhbangv5,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "Samsung Galaxy Tab S9 FE 5G 6GB 128GB - Chỉ có tại CellphoneS",
+        costTrue: "9.990.000",
+        costSale: "12.990.000",
+        image: MayTinhBangHotShow.maytinhbangv6,
+        percentSale: "28%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "96.000"
+    },
+    {
+        title: "Macbook Pro 14 M3 Pro 18GB - 512GB | Chính hãng Apple Việt Nam",
+        costTrue: "49.590.000",
+        costSale: "49.590.000",
+        image: MayTinhBangHotShow.maytinhbangv7,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "Macbook Pro 14 M3 Pro 18GB - 512GB | Chính hãng Apple Việt Nam",
+        costTrue: "49.590.000",
+        costSale: "49.590.000",
+        image: MayTinhBangHotShow.maytinhbangv8,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "Macbook Pro 14 M3 Pro 18GB - 512GB | Chính hãng Apple Việt Nam",
+        costTrue: "49.590.000",
+        costSale: "49.590.000",
+        image: MayTinhBangHotShow.maytinhbangv9,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+    {
+        title: "Macbook Pro 14 M3 Pro 18GB - 512GB | Chính hãng Apple Việt Nam",
+        costTrue: "49.590.000",
+        costSale: "49.590.000",
+        image: MayTinhBangHotShow.maytinhbangv10,
+        percentSale: "1%",
+        instalment: "0",
+        index:1,
+        moreDiscount : "496.000"
+    },
+
 ]
