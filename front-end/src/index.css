@@ -22,7 +22,6 @@ body{
 }
 .body{
   width: 100%;
-  overflow: auto;
 }
 .banner-container{ 
   width: 100%;
@@ -67,5 +66,11 @@ input {
 
 .bodyFooter{
   height: calc(100% - 128px);
+}
+
+.backGroundImage{
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 }
 

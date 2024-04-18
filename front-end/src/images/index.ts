@@ -98,11 +98,26 @@ import maytinhbangv7 from './may_tinh_bang_hot_show/ss-tab-s9-ultra_1__1.webp'
 import maytinhbangv8 from './may_tinh_bang_hot_show/ss-tab-s9_1.webp'
 import maytinhbangv9 from './may_tinh_bang_hot_show/tab-s9-fe-5g-doc-quyen.webp'
 import maytinhbangv10 from './may_tinh_bang_hot_show/xiaomi-redmi-pad-se_1_3.webp'
-
-
-
-
-
+//
+import apple_care from './phu_kien/apple_care.png';
+import quat from './phu_kien/cate-109-quat.webp';
+import chuot_pc from './phu_kien/chuot_pc.png';
+import device_internet from './phu_kien/device_internet.png';
+import doc_quyen from './phu_kien/doc_quyen.png';
+import flycam from './phu_kien/flycam.webp';
+import game from './phu_kien/game.png';
+import gia from './phu_kien/gia.png';
+import icon_cam_anninh from './phu_kien/icon_cam_anninh.webp';
+import icon_cam_htrinh from './phu_kien/icon_cam_htrinh.webp';
+import iphone from './phu_kien/iphone.png';
+import may_anh from './phu_kien/may_anh.webp';
+import o_cung from './phu_kien/o_cung.png';
+import op from './phu_kien/op.png';
+import sac from './phu_kien/sac.png';
+import sac_nhanh from './phu_kien/sac_nhanh.png';
+import sim4g from './phu_kien/sim4g.webp';
+import up_lung from './phu_kien/up_lung.png';
+import usb from './phu_kien/usb.png';
 
 
 //
@@ -219,4 +234,26 @@ export const MayTinhBangHotShow={
     maytinhbangv8,
     maytinhbangv9,
     maytinhbangv10
+}
+
+export const phuKienImage={
+    apple_care,
+    quat,
+    chuot_pc,
+    device_internet,
+    doc_quyen,
+    flycam,
+    game,
+    gia,
+    icon_cam_anninh,
+    icon_cam_htrinh,
+    iphone,
+    may_anh,
+    o_cung,
+    op,
+    sac_nhanh,
+    sac,
+    sim4g,
+    up_lung,
+    usb
 }

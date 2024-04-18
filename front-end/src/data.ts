@@ -1,4 +1,4 @@
-import { LaptopHotShow, MayTinhBangHotShow, ProducetHotShow, ProductSale, brandImage, computerImage } from "./images"
+import { LaptopHotShow, MayTinhBangHotShow, ProducetHotShow, ProductSale, brandImage, computerImage, phuKienImage } from "./images"
 
 export const PhoneMenu = [
     {
@@ -1575,4 +1575,102 @@ export const ListMayTinhBangHotShow:Product[]=[
         moreDiscount : "496.000"
     },
 
+]
+
+export const ListPhuKien=[
+    {
+        label: "Nổi bật",
+        value:"Nổi bật",
+        img:phuKienImage.doc_quyen
+    },
+    {
+        label: "Phu kiện Apple",
+        value:"Phụ kiên Apple",
+        img: phuKienImage.iphone
+    },
+    {
+        label:"Dán màn hình",
+        value:"Dán màn hình",
+        img:phuKienImage.op
+    },
+    {
+        value:"Ốp lưng - Bao gia",
+        label:"Ốp lung - Bao gia",
+        img: phuKienImage.up_lung
+    },
+    {
+        value: "Cáp, Sạc",
+        label: "Cáp, Sạc",
+        img: phuKienImage.sac
+    },
+    {
+        value:"Pin dự phòng",
+        label:"Pin dự phòng",
+        img: phuKienImage.sac_nhanh
+    },
+    {
+        value:"Thiết bị mạng",
+        label:"Thiết bị mạng",
+        img: phuKienImage.device_internet
+    },
+    {
+        value:"Gameing Center",
+        label:"Gameing Center",
+        img: phuKienImage.game
+    },
+    {
+        value: "Thẻ nhớ, USB",
+        label:"Thẻ nhớ, USB",
+        img: phuKienImage.usb
+    },
+    {
+        value:"Chuột, Bàn phím",
+        label:"Chuột, Bàn phím",
+        img: phuKienImage.chuot_pc
+    },
+    {
+        value: "Sim 5g",
+        label: "Sim 5G",
+        img: phuKienImage.sim4g
+    },
+    {
+        value: "Máy ảnh",
+        label: "Máy ảnh",
+        img: phuKienImage.may_anh
+    },
+    {
+        value: "Flycam",
+        label:"Flycam",
+        img:phuKienImage.flycam
+    },
+    {
+        value:"Camera hành trình",
+        label:"Camera hành trình",
+        img: phuKienImage.icon_cam_htrinh
+    },
+    {
+        value:"Camera an ninh",
+        label:"Camera an ninh",
+        img: phuKienImage.icon_cam_anninh
+    },
+    {
+        value: "Phụ kiên laptop",
+        label: "Phụ kiện laptop",
+        img: phuKienImage.gia,
+    },
+    {
+        value:"Quạt mini",
+        label:"Quạt mini",
+        img: phuKienImage.quat
+    },
+    {
+        value:"Ổ cứng",
+        label:"Ổ cứng",
+        img: phuKienImage.o_cung
+    },
+    {
+        value:"Apple Care",
+        label: "Apple Care",
+        img: phuKienImage.apple_care
+    }
 ]

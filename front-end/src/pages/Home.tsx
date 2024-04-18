@@ -1,7 +1,7 @@
 import React, { useReducer, useRef, useState } from 'react'
 import Banner from '../components/Banner'
 import Category from '../sections/Category'
-import { ListHotSmartPhone, ListMayTinhBangHotShow, PhoneMenu, filterHotLaptopShow, filterIpad } from '../data'
+import { ListHotSmartPhone, ListMayTinhBangHotShow, ListPhuKien, PhoneMenu, filterHotLaptopShow, filterIpad } from '../data'
 
 import LayoutHome from '../layouts/LayoutHome'
 import CostHotSale from '../sections/CostHotSale'
@@ -10,6 +10,7 @@ import { Swiper as SwiperType } from 'swiper';
 import SliderCustom from '../sections/SliderCustom'
 import DoubleSildeCustom from '../sections/DoubleSildeCustom'
 import { filterHotSmartPhone,ListLaptopHotShow } from '../data'
+import { phuKienImage } from '../images'
 
 function Home() {
   const swiperRef = useRef<SwiperType>();
@@ -64,6 +65,32 @@ function Home() {
           </div>
         </div>
         {/* May tinh bang hot show */}
+        {/* phu kien */}
+        <div className='w-full h-full relative flex items-center justify-center'> 
+          <div className='zero:w-[100%] xl-1200:w-[1250px] flex items-center justify-between h-full'>
+            <TitleProducts title="Phụ  kiện" filter={[{value:"Xem tất cả", label:"Xem tất cả"}]}/>  
+          </div>
+        </div>
+        <div className='w-full h-full relative flex items-center justify-center'>
+          <div className='zero:w-[100%] xl-1200:w-[1250px] flex items-center justify-between h-full' >
+            <div className='w-full h-full text-white '>
+              {
+                ListPhuKien.map((data,index)=>(
+                <div style={{backgroundImage:`url(${data.img})`}} className='backGroundImage bg-pink rounded-[10px] w-[120px] h-[125px] m-[5px]  float-left'>
+                    <span className='font-bold text-[15px] p-[10px]'>{data.label}</span>
+                </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+         {/* phu kien */}
+
+         <div className='w-full h-full relative flex items-center justify-center'> 
+          <div className='zero:w-[100%] xl-1200:w-[1250px] flex items-center justify-between h-full'>
+            <TitleProducts title="Ưa đãi sinh viên" filter={[]}/>  
+          </div>
+        </div>
     </div>
   )
 }

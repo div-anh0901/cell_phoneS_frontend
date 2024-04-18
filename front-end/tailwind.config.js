@@ -15,7 +15,8 @@ module.exports = {
         "bg-accessory" : 'rgb(224, 242, 254)',
         "bg-tivi" : 'rgb(237, 233, 254)',
         "bg-newpaper": 'rgb(204, 251, 241)',
-        "bg-pink": "rgb(224, 0, 51)"
+        "bg-pink": "rgb(224, 0, 51)",
+        "pink":'rgb(242, 131, 118)'
 
       },
       backgroundImage: {
